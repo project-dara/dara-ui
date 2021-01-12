@@ -48,7 +48,10 @@ export const Home = () => {
   
   const onClick = () => {
     // TODO: should get signer when logging in.
-    addSigner(library.getSigner())
+    if(library){
+      addSigner(library.getSigner())
+
+    }
     console.log('buy', account, distributor);
     const amountInWei = ethToWei(fundAmount.toString())
     distributor.buyTokens(account, {
