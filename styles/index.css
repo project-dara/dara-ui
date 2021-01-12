@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Open+Sans&display=swap");
+
+body {
+  @apply bg-trueGray-900 text-white;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.styled-font {
+  font-family: "Jacques Francois Shadow", cursive;
+}
+
+th,
+td {
+  border: 1px solid white;
+}
