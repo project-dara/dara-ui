@@ -14,6 +14,7 @@ body {
 
 .styled-font {
   font-family: "Jacques Francois Shadow", cursive;
+  text-shadow: cyan 0 0 8px;
 }
 
 th,

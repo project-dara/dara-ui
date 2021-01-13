@@ -2,6 +2,10 @@ import React from "react";
 import { Web3Provider } from "@ethersproject/providers";
 import Link from 'next/link'
 import useSWR from "swr";
+import { IoIosDocument } from 'react-icons/io';
+import { RiGovernmentLine } from 'react-icons/ri';
+import { GiVote } from 'react-icons/gi';
+import { FaGithub } from 'react-icons/fa';
 // import Balance from "../../components/Balance";
 // import TokenBalance from "../../components/TokenBalance";
 import Dara from '../../contracts/artifacts/Dara.json'
@@ -51,19 +55,32 @@ export const Home = () => {
       </div>
 
       <div className="my-3 text-center">
-      <Link href="/crowdfund"><button className=" w-full rounded-md p-2 bg-cyan-500 text-black">CrowdFund</button></Link>
+      <Link href="/crowdfund"><button className=" w-full rounded-md p-2 bg-cyan-500 text-black font-bold hover:bg-cyan-600">CrowdFund</button></Link>
       </div>
       <div className="my-3 text-center">
-        <button className="w-full rounded-md p-2 bg-gray-500 text-black">Go to App (Coming Soon)</button>
+        <button className="w-full rounded-md p-2 bg-gray-500 hover:bg-gray-600 text-black font-bold">Go to App (Coming Soon)</button>
       </div>
 
       <div className="text-center">
         <div className="flex justify-between">
-          <div className="p-2 border-2 rounded-md w-full">Docs</div>
-          {/* https://dara-consensus.gitbook.io/dara-docs/ */}
-          <div className="mx-2 p-2 border-2 rounded-md w-full">Github</div>
-          {/* https://github.com/project-dara */}
-          <div className="p-2 border-2 rounded-md w-full">Governance</div>
+          <div className="p-2 border-2 rounded-md w-full hover:bg-cyan-500 hover:text-black">
+            <a href="https://dara-consensus.gitbook.io/dara-docs/" className="flex justify-center items-center">
+            <IoIosDocument />
+            <p className="ml-2">Docs</p>
+            </a>
+          </div>
+          <div className="mx-2 p-2 border-2 rounded-md w-full hover:bg-cyan-500 hover:text-black">
+            <a href="https://github.com/project-dara" className="flex justify-center items-center">
+            <FaGithub /> 
+            <p className="ml-2">Github</p> 
+            </a>
+            </div>
+          <div className="p-2 border-2 rounded-md w-full hover:bg-cyan-500 hover:text-black">
+            <a href="https://dara-consensus.gitbook.io/dara-docs/" className="flex justify-center items-center">
+            <RiGovernmentLine /> 
+            <p className="ml-2">Governance</p> 
+            </a>
+          </div>
         </div>
       </div>
 
