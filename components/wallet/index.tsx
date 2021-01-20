@@ -15,9 +15,9 @@ export const Wallet = () => {
   return (
     <div>
       {active ? (
-        <div className="p-2 bg-pink-600 border-black">Connected </div>
+        <div className="p-2 rounded-md bg-pink-600 border-black">Connected </div>
       ) : (
-        <button type="button" onClick={onClick} className="rounded-md p-2 bg-white hover:bg-pink-600 text-black hover:text-white">
+        <button type="button" onClick={onClick} className="p-2 rounded-md bg-white hover:bg-pink-600 text-black hover:text-white">
           Connect MetaMask
         </button>
       )}
